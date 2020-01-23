@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main (void) {
+double latitude1
+double latitude2
+double longitude1
+double longitude2
+double DiffernceLongitude
+("please enter the latitude of the first location.");
+scanf(""%lf", &latitude1);
+
+("please enter the longitude of the  location.");
+scanf(""%lf", &longitude1);
+
+("please enter the latitude of the second location.");
+scanf(""%lf", &latitude1);
+
+("please enter the longitude of the second location.");
+scanf(""%lf", &longitude1);
+
+DiffernceLongitude = longitude1 - longitude2
+
+d= arccos (sin(latitude1) sin(latitude2) + cos(latitude1) cos(latitude2) cos(DiffernceLongitude))·R
+
+printf("location Distance\n")
+printf("========================\n")
+printf("origin:   (%lf,%lf)\n"latitude1, longitude1)
+printf("Destination:  (%lf,%lf)\n"latitude2, longitude2")
+printf("Air distance is %f Km"d)
+
+}
+print
