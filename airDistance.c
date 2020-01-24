@@ -17,18 +17,18 @@ double Lat1;
 double Lat2;
 double r;
 double distance;
-printf("please enter the latitude of the first location.\n");
+printf("please enter the latitude of the first location.");
 scanf("%lf", &latitude1);
 Lat1=(latitude1/180)*M_PI;
-printf("please enter the longitude of the  location.\n");
+printf("please enter the longitude of the  location.");
 scanf("%lf", &longitude1);
 Long1=(longitude1/180)*M_PI;
 
-printf("please enter the latitude of the second location.\n");
+printf("please enter the latitude of the second location.");
 scanf("%lf", &latitude2);
 Lat2=(latitude2/180)*M_PI;
 
-printf("please enter the longitude of the second location.\n");
+printf("please enter the longitude of the second location.");
 scanf("%lf", &longitude2);
 Long2=(longitude2/180)*M_PI;
 
