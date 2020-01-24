@@ -3,7 +3,7 @@
 /Description: Finding the dirstance using the origin and destination
 */
 #include <stdio.h>
-##include <Math.h>
+#include <math.h>
 
 int main (void) {
 double latitude1;
@@ -11,37 +11,38 @@ double latitude2;
 double longitude1;
 double longitude2;
 double DiffernceLongitude;
-double rLongitude1;
-double rLongitude2;
-double rLatitude1;
-dounle rLatitude2;
-("please enter the latitude of the first location.");
-scanf(""%lf", &latitude1);
-rLatitude1=(latitude1/180)*M_PI;
+double Long1;
+double Long2;
+double Lat1;
+double Lat2;
+double r;
+double distance;
+printf("please enter the latitude of the first location.\n");
+scanf("%lf", &latitude1);
+Lat1=(latitude1/180)*M_PI;
+printf("please enter the longitude of the  location.\n");
+scanf("%lf", &longitude1);
+Long1=(longitude1/180)*M_PI;
 
-("please enter the longitude of the  location.");
-scanf(""%lf", &longitude1);
-rLongitude1=(longitude1/180)*M_PI;
+printf("please enter the latitude of the second location.\n");
+scanf("%lf", &latitude2);
+Lat2=(latitude2/180)*M_PI;
 
-("please enter the latitude of the second location.");
-scanf(""%lf", &latitude2);
-rLatitude2=(latitude2/180)*M_PI;
+printf("please enter the longitude of the second location.\n");
+scanf("%lf", &longitude2);
+Long2=(longitude2/180)*M_PI;
 
-("please enter the longitude of the second location.");
-scanf(""%lf", &longitude2);
-rLongitude2=(longitude2/180)*M_PI;
+r = 6371;
 
-R=6371;
+DiffernceLongitude = Long1 - Long2;
 
-DiffernceLongitude = rlongitude1 - rlongitude2;
-
-d= acos(sin(rlatitude1) *sin(rlatitude2) + cos(rlatitude1) *cos(rlatitude2) *cos(DiffernceLongitude))·R;
+distance = acos(sin(Lat1) *sin(Lat2) + cos(Lat1) *cos(Lat2) *cos(DiffernceLongitude))*r;
 
 printf("location Distance\n");
 printf("========================\n");
-printf("origin:   (%lf,%lf)\n"latitude1, longitude1);
-printf("Destination:  (%lf,%lf)\n"latitude2, longitude2");
-printf("Air distance is %f Km"d);
+printf("origin:   (%lf,%lf)\n", latitude1, longitude1);
+printf("Destination:  (%lf,%lf)\n", latitude2, longitude2);
+printf("Air distance is %f Km", distance);
 
 return 0;
 }
